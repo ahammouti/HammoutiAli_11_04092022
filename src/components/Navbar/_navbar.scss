@@ -1,0 +1,12 @@
+.menu {
+    display: flex;
+    height: 100%;
+    margin: auto 0;
+    column-gap: 10px;
+    justify-content: space-evenly;
+
+    &__link {
+        margin-left: 20px;
+        color: #FF6060;
+    }
+}

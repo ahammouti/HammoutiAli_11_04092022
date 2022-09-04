@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    width: 100vw;
+    padding: 20px;
+    // background: rgb(255, 198, 198);
+    justify-content: space-between;
+    column-gap: 20px;
+
+    &__logo {
+        height: 100%;
+        width: 100px;
+    }
+}
