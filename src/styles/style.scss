@@ -1,3 +1,3 @@
 @import './base/reset', './base/typography';
-@import '../components/Header/header.scss', '../components/Navbar/navbar.scss', '../components/Loader/loader.scss', '../components/CardAccommodation/CardAccommodation.scss';
-@import '../views/HomeUi/homeUi.scss';
+@import '../components/Header/header.scss', '../components/Footer/footer.scss', '../components/Navbar/navbar.scss', '../components/Loader/loader.scss', '../components/CardAccommodation/CardAccommodation.scss', '../components/GalleryAccommodation/GalleryAccommdation.scss', '../components/SlideShow/slideShow.scss', '../components/Accordion/accordion.scss', '../components/Rates/rates.scss';
+@import '../views/HomeUi/homeUi.scss', '../views/AccommodationSheetUi/AccommodationSheetUi.scss', '../views/AboutUi/aboutUi.scss', '../views/NotFoundUi/notFoundUi.scss';

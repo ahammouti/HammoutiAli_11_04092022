@@ -1,14 +1,17 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 import logoKasa from '../../assets/images/logo.png';
 
 const Header = () => {
     return (
-        <div className='header'>
-            <img className='header__logo' src={logoKasa} alt="logo kasa" />
+        <header className='header'>
+            <Link to='/'>
+                <img className='header__logo' src={logoKasa} alt="logo kasa" />
+            </Link>
             <Navbar />
-        </div>
+        </header>
     )
 }
 

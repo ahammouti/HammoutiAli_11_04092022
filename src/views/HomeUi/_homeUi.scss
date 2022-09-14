@@ -1,6 +1,14 @@
 .container {
     margin: 0 20px;
 
+    @media screen and (min-width: 622px) {
+        margin: 0 80px;
+    }
+
+    @media screen and (min-width: 924px) {
+        margin: 40px 100px;
+    }
+
     .hero__banner {
         height: 111px;
         background: #000;
@@ -9,6 +17,11 @@
         display: flex;
         position: relative;
 
+        @media screen and (min-width: 924px) {
+            height: 180px;
+            border-radius: 20px;
+        }
+
         .hero__title {
             margin: auto 0;
             color: #fff;
@@ -16,6 +29,17 @@
             z-index: 5;
             line-height: 24px;
             font-weight: 500;
+
+            @media screen and (min-width: 924px) {
+                width: 100%;
+                font-size: 32px;
+                display: flex;
+                justify-content: center;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 42px;
+            }
         }
 
         .hero__img {
@@ -27,6 +51,10 @@
             border-radius: 10px;
             object-fit: cover;
             filter: opacity(60%);
+
+            @media screen and (min-width: 924px) {
+                border-radius: 20px;
+            }
         }
     }
 }

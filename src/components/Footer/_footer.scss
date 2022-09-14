@@ -1,0 +1,23 @@
+.footer {
+    background: #000;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-top: 20px;
+    row-gap: 25px;
+
+    &__logo {
+        width: 90px;
+
+    }
+
+    &__copyright {
+        color: #fff;
+    }
+}

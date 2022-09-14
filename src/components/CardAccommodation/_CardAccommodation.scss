@@ -1,6 +1,12 @@
-.gallery {
-    margin-top: 25px;
-    background: #f1f1f1;
+.cardItem {
+    border-radius: 10px;
+    background: #FF6060;
+
+    &__card {
+        @media screen and (min-width: 1024px) {
+            min-height: 320px;
+        }
+    }
 
     &__card {
         position: relative;

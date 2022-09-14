@@ -1,0 +1,41 @@
+.accordion__container-title {
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion__title {
+    padding: 8px;
+    color: #fff;
+    padding-left: 15px;
+    border-radius: 7px;
+    background: #ff6060;
+
+    &-chevronIcon {
+        position: absolute;
+        width: 20px;
+        height: 100%;
+        top: 0;
+        right: 3%;
+        transform: rotate(180deg);
+    }
+
+    &-chevronIcon.rotate {
+        transform: rotate(0deg);
+    }
+}
+
+.accordion__details {
+    background: #f6f6f6;
+    border-radius: 7px;
+    color: #ff6060;
+    padding: 20px;
+    padding-top: 30px;
+    line-height: 23px;
+    margin-top: -8px;
+    display: none;
+}
+
+.accordion__details.display-accordion {
+    display: block;
+
+}

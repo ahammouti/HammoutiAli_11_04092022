@@ -8,16 +8,16 @@ const CardAccommodation = (props) => {
     const pathAccommodation = props.accommodation.title.toLowerCase().replace("-", " ").replace(/\s+/g, '-');
 
     return (
-        <div className="gallery">
+        <div className="cardItem">
             <ul>
                 <li>
                     <Link to={`/fiche-logement/${pathAccommodation}/${props.accommodation.id}`}>
-                        <article className="gallery__card">
+                        <article className="cardItem__card">
                             {
                                 loading === true ? <Loader /> :
                                     <>
-                                        <h3 className="gallery__titleCard">{props.accommodation.title}</h3>
-                                        <img src={props.accommodation.cover} className="gallery__imgCard" alt="" />
+                                        <h3 className="cardItem__titleCard">{props.accommodation.title}</h3>
+                                        <img src={props.accommodation.cover} className="cardItem__imgCard" alt="" />
                                     </>
                             }
                         </article>

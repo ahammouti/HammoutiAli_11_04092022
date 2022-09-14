@@ -6,7 +6,7 @@ const HomeUi = () => {
     return (
         <main className='container'>
             <div className="hero__banner">
-                <h1 className='hero__title'>Chez vous, <br /> partout et ailleurs</h1>
+                <h1 className='hero__title'>Chez vous, partout et ailleurs</h1>
                 <img className='hero__img' src={heroImg} alt="" />
             </div>
             <GalleryAccommodation />

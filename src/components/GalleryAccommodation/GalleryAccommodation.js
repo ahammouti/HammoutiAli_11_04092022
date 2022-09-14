@@ -7,7 +7,7 @@ const GalleryAccommodation = () => {
     const { data: datas } = useFetch(url);
 
     return (
-        <div className="cardItem">
+        <div className="gallery">
             {datas !== null ?
                 datas.map(cardItem => {
                     return (

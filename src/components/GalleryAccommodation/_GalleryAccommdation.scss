@@ -1,0 +1,21 @@
+.gallery {
+    display: grid;
+    border-radius: 15px;
+    margin-top: 40px;
+    row-gap: 40px;
+    column-gap: 40px;
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 924px) {
+        grid-template-columns: repeat(2, 1fr);
+        background: #f6f6f6;
+        margin-top: 40px;
+        padding: 40px 40px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 45px;
+        margin-top: 40px;
+    }
+}
