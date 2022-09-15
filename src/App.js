@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import './styles/style.scss'
 import AboutUi from './views/AboutUi/AboutUi';
 import AccommodationSheetUi from './views/AccommodationSheetUi/AccommodationSheetUi';
@@ -10,16 +10,18 @@ import NotFoundUi from './views/NotFoundUi/NotFoundUi';
 
 const App = () => {
   return (
-    <div className='App'>
-      <Header />
-      <Routes>
-        <Route element={<HomeUi />} path="/" />
-        <Route element={<AccommodationSheetUi />} path="/fiche-logement/:id/:id" />
-        <Route element={<AboutUi />} path="/a-propos" />
-        <Route element={<NotFoundUi />} path="*" />
-      </Routes>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <Header />
+        <Routes>
+          <Route element={<HomeUi />} path="/" />
+          <Route element={<AccommodationSheetUi />} path="/fiche-logement/:id/:id" />
+          <Route element={<AboutUi />} path="/a-propos" />
+          <Route element={<NotFoundUi />} path="*" />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   )
 }
 
