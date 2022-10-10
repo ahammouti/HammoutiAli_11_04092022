@@ -7,7 +7,7 @@ import Rates from '../../components/Rates/Rates';
 import Loader from '../../components/Loader/Loader';
 
 const AccommodationSheetUi = () => {
-    const url = "http://localhost:3000/logements.json"
+    const url = process.env.REACT_APP_BASE_URL
     const { data: datas, loading } = useFetch(url);
     const { id } = useParams();
     if (datas === null) return;

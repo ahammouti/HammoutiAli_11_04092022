@@ -4,7 +4,7 @@ import mountain from '../../assets/images/mountain.png';
 import useFetch from '../../useFetch.js';
 
 const AboutUi = () => {
-    const url = "http://localhost:3000/logements.json"
+    const url = process.env.REACT_APP_BASE_URL;
     const { data: datas } = useFetch(url);
 
     if (datas === null) return;

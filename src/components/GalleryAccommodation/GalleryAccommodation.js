@@ -3,7 +3,7 @@ import useFetch from '../../useFetch';
 import CardAccommodation from '../CardAccommodation/CardAccommodation';
 
 const GalleryAccommodation = () => {
-    const url = "http://localhost:3000/logements.json"
+    const url = process.env.REACT_APP_BASE_URL;
     const { data: datas } = useFetch(url);
 
     return (
